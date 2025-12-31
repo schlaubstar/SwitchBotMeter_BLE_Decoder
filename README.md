@@ -1,3 +1,8 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![BLE](https://img.shields.io/badge/BLE-SwitchBot-green)
+![MQTT](https://img.shields.io/badge/MQTT-supported-orange)
+
 # SwitchBotMeter2MQTT-Python
 A lightweight Python-based Bluetooth Low Energy (BLE) scanner that reads temperature, humidity, battery level, and RSSI from SwitchBot Meter devices and publishes the values to MQTT.
 This project is ideal for:
