@@ -96,5 +96,23 @@ sudo systemctl enable --now switchbot2mqtt
 
 This project was developed to provide a clean, reliable, and fully documented Python alternative to ESP32-based SwitchBot Meter integrations.
 
-LICENSE
+## LICENSE
 MIT License
+
+## Why This Project Exists
+
+Many SwitchBot Meter BLE decoders on the internet incorrectly interpret the
+temperature bytes, especially for negative values. This leads to impossible
+readings like -127.8°C or +102°C.
+
+This repository documents the correct decoding logic based on the actual BLE
+payload structure and provides a working Python implementation.
+
+## Example BLE Payloads
+
+Raw ServiceData: 3D FD 54 00 E4 02 00 57  
+Decoded temperature: -0.2°C
+
+Raw ServiceData: 3D FD 54 00 E4 01 04 51  
+Decoded temperature: -4.1°C
+
